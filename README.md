@@ -41,7 +41,7 @@ Check temperature and humidity in New York:
 ```
 
 ### Parameters
-All parameters are base on the class `Parameters` in "[src\sunnyday\weather_values.py](src\sunnyday\weather_values.py)"
+All parameters are based on the class `Parameters` in "[src\sunnyday\weather_values.py](src\sunnyday\weather_values.py)"
 
 ```python
 class Parameter(BaseModel):
@@ -50,7 +50,7 @@ class Parameter(BaseModel):
     temperature: bool = True
     humidity: bool = True
 ```
-You may optionally edit timezone, as well as `temperature` and `humidity`, to show 'temperature_2m' and 'relative_humidity_2m', respectively.
+You may optionally edit `timezone`, as well as `temperature` and `humidity`, to show 'temperature_2m' and 'relative_humidity_2m', respectively.
 
 Example (timezone GMT12, show temperature and don't show humidity): 
 `http://127.0.0.1:8000/?city=NYC&timezone=GMT12&temperature=true&humidity=false`
