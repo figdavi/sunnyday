@@ -1,0 +1,27 @@
+[project]
+name = "sunnyday"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "figdavi"}
+]
+readme = "README.md"
+requires-python = ">=3.13, <4.0"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "redis[hiredis] (>=6.0.0,<7.0.0)",
+    "slowapi (>=0.1.9,<0.2.0)"
+]
+
+[tool.poetry]
+packages = [{include = "sunnyday", from = "src"}]
+package-mode = false
+
+[tool.poetry.scripts]
+sunnyday = "sunnyday.main:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

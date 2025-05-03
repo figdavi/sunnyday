@@ -1,0 +1,15 @@
+services:
+  API:
+    image: sunnyday
+    pull_policy: never
+    container_name: sunnyday_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+  redis:
+    image: redis
+    container_name: redis_container
+    ports:
+      - 6379:6379
