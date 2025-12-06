@@ -6,7 +6,7 @@ Built on top of [open-meteo](https://open-meteo.com/) with [FastAPI](https://fas
 ## How to run locally
 1. Clone the repository
 2. Run `cd sunnyday/`
-3. Run `docker compose up --build`
+3. Run `docker compose up --build -d`
 
 ## Example usage
 Check temperature and humidity in New York:
